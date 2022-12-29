@@ -15,8 +15,8 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2020/3/5/170ab6c24dd39ddc~tplv-t2oaga2asx-zoom-in-crop-mark:4536:0:0:0.awebp">
 <meta property="og:image" content="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2020/3/5/170ab6c26e3ec347~tplv-t2oaga2asx-zoom-in-crop-mark:4536:0:0:0.awebp">
-<meta property="article:published_time" content="2022-12-29T07:43:50.262Z">
-<meta property="article:modified_time" content="2022-12-29T07:43:50.262Z">
+<meta property="article:published_time" content="2022-12-29T07:49:45.953Z">
+<meta property="article:modified_time" content="2022-12-29T07:49:45.953Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2020/3/5/170ab6c24dd39ddc~tplv-t2oaga2asx-zoom-in-crop-mark:4536:0:0:0.awebp">
@@ -124,28 +124,32 @@
 
 
     <div class="meta">
-      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">John Doe</span>
+      <span
+        class="author"
+        itemprop="author"
+        itemscope
+        itemtype="http://schema.org/Person"
+      >
+        <span itemprop="name"
+          >John Doe</span
+        >
       </span>
       
     <div class="postdate">
       
-        <time datetime="2022-12-29T07:43:50.262Z" itemprop="datePublished">2022-12-29</time>
+        <time datetime="2022-12-29T07:49:45.953Z" itemprop="datePublished">2022-12-29</time>
         
       
     </div>
 
-
-      
-
-      
+ 
+ 
 
     </div>
   </header>
   
 
-  <div class="content" itemprop="articleBody">
-    <h2 id="响应式与自适应"><a href="#响应式与自适应" class="headerlink" title="响应式与自适应"></a>响应式与自适应</h2><p>我们很多人其实把这响应式和自适应两种网站当成一回事，但事实上这两种网站的布局方式是有一定的区别的。我们可以来看看这两种方法的概念以及分别对应解决的问题。</p>
+  <div class="content" itemprop="articleBody"><h2 id="响应式与自适应"><a href="#响应式与自适应" class="headerlink" title="响应式与自适应"></a>响应式与自适应</h2><p>我们很多人其实把这响应式和自适应两种网站当成一回事，但事实上这两种网站的布局方式是有一定的区别的。我们可以来看看这两种方法的概念以及分别对应解决的问题。</p>
 <h3 id="什么是响应式布局？"><a href="#什么是响应式布局？" class="headerlink" title="什么是响应式布局？"></a>什么是响应式布局？</h3><p>响应式布局就是一个网站能够兼容多个终端，可以根据屏幕的大小自动调整页面的的展示方式以及布局，我们不用为每一个终端做一个特定的版本。响应式网站的几个标志：</p>
 <ol>
 <li>同时适配PC + 平板 + 手机等；</li>
@@ -294,8 +298,12 @@
 
 <h4 id="导航条显示和隐藏切换"><a href="#导航条显示和隐藏切换" class="headerlink" title="导航条显示和隐藏切换"></a>导航条显示和隐藏切换</h4><p>利用js来控制切换的思路很简单，我们在网页打开时，先把导航隐藏掉，然后定义一个变量<code>hide</code>，初始值为<code>true</code>，点击按钮时进行判断：如果<code>hide</code>值为<code>true</code>，则让导航显示；反之隐藏。</p>
 <figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">let <span class="attr">btn</span> = document.getElementById(<span class="string">&quot;nav-btn&quot;</span>)<span class="comment">;</span></span><br><span class="line">let  <span class="attr">nav</span> =  document.getElementById(<span class="string">&quot;nav-item&quot;</span>)<span class="comment">;</span></span><br><span class="line"></span><br><span class="line">let <span class="attr">hide</span> = <span class="literal">true</span><span class="comment">;</span></span><br><span class="line"></span><br><span class="line">btn.addEventListener(&#x27;click&#x27;, function () &#123;</span><br><span class="line">    if (hide)&#123;</span><br><span class="line">        <span class="attr">nav.style.display</span> = <span class="string">&quot;block&quot;</span><span class="comment">;</span></span><br><span class="line">        <span class="attr">hide</span> = <span class="literal">false</span><span class="comment">;</span></span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        <span class="attr">nav.style.display</span> = <span class="string">&quot;none&quot;</span><span class="comment">;</span></span><br><span class="line">        <span class="attr">hide</span> = <span class="literal">true</span><span class="comment">;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;)<span class="comment">;</span></span><br></pre></td></tr></table></figure>
-
-  </div>
+</div>
+  <a
+    href="https://github.com/Loosand/loosand.github.io/blob/myblog/source/_posts/123.md"
+    target="_blank"
+    >编辑</a
+  >
 </article>
 
 
