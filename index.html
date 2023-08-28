@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            #root {
+                position: absolute;
+                max-width: 900px;
+                left: 0;
+                right: 0;
+                margin: 0 auto 100px auto;
+                font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue,
+                    PingFang SC, Microsoft YaHei, Source Han Sans SC,
+                    Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+            }
+
+            section li {
+                margin-top: 5px;
+            }
+            section li:last-child {
+                margin-bottom: 5px;
+            }
+            section p,
+            section li {
+                color: #24292e;
+                line-height: 24px;
+            }
+            section a,
+            section a:link,
+            section a:visited {
+                color: #0366d6;
+            }
+            section a:focus,
+            section a:hover {
+                color: #03a9f4;
+            }
+        </style>
+    </head>
+    <body>
+        <div
+            class="m-auto w-[900px] h-screen container space-y-6 p-14 font-normal">
+            <header>
+                <h1 class="border-b pb-4 text-5xl font-bold">邢凯</h1>
+                <ul
+                    class="flex flex-wrap justify-between p-5 text-md [&>li]:w-1/2 [&>li]:space-x-2">
+                    <li>
+                        <i class="ri-mail-line"></i
+                        ><a href="mailto:loosand@163.com">loosand@163.com</a>
+                    </li>
+                    <li>
+                        <i class="ri-links-line"></i
+                        ><a href="http://www.loosand.top">www.loosand.top</a>
+                    </li>
+                    <li>
+                        <i class="ri-phone-line"></i><span>15345694804</span>
+                    </li>
+                    <li>
+                        <i class="ri-github-fill"></i
+                        ><a href="https://github.com/Loosand"
+                            >github.com/Loosand</a
+                        >
+                    </li>
+                    <li><i class="ri-wechat-fill"></i><span>loosand</span></li>
+                    <li><i class="ri-user-line"></i><span>2024届</span></li>
+                </ul>
+            </header>
+
+            <!-- 教育经历 -->
+            <section>
+                <h1 class="space-x-2 border-b pb-4">
+                    <i class="ri-graduation-cap-line"></i
+                    ><span class="font-normal">教育经历</span>
+                </h1>
+                <ul class="list-disc space-y-3 py-5 ml-8">
+                    <li>马鞍山学院，本科</li>
+                    <li>CET-4</li>
+                    <li>计算机硬件维护师</li>
+                </ul>
+            </section>
+
+            <!-- 专业技能 -->
+            <section>
+                <h1 class="space-x-2 border-b pb-4">
+                    <i class="ri-tools-line"></i
+                    ><span class="font-medium">专业技能</span>
+                </h1>
+                <ul class="list-disc space-y-3 py-5 ml-8">
+                    <li>
+                        熟练掌握HTML5，精通CSS3，有良好响应式布局经验、无障碍开发意识。
+                    </li>
+                    <li>
+                        熟练掌握JavaScript，包括ES6新特性、DOM、模块化开发、异步。
+                    </li>
+                    <li>熟练使用Tailwind、SCSS等框架和预处理器。</li>
+                    <li>
+                        熟练使用Ajax、Axios进行前后端数据交互，能够实现异步请求和数据更新。
+                    </li>
+                    <li>
+                        熟悉Node.js、前端工程化，熟练使用NPM、前端脚手架、Mock.js进行开发。
+                    </li>
+                    <li>
+                        熟练使用Vue3及其周边生态（Pinia、Router、VueUse、Element
+                        UI）进行项目开发。
+                    </li>
+                    <li>
+                        具备Webpack、Vite等打包构建工具的使用经验，并了解其原理和配置，能够优化项目的性能和打包输出。
+                    </li>
+                    <li>
+                        了解HTTP协议以及常用的网络调试工具，具备基础的网络知识。
+                    </li>
+                    <li>
+                        熟练使用Git、GitHub等代码管理工具，能够进行代码版本控制和团队协作。
+                    </li>
+                    <li>
+                        熟练使用Figma等设计软件进行协同编码，能够根据设计稿高度还原界面。
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 其它技能 -->
+            <section>
+                <h1 class="space-x-2 border-b pb-4">
+                    <i class="ri-git-repository-line"></i
+                    ><span class="font-medium">其它技能</span>
+                </h1>
+                <ul class="list-disc space-y-3 py-5 ml-8">
+                    <li>有良好的文档写作规范和习惯。</li>
+                    <li>热衷于探索新技术和框架，平时会关注前沿技术和社区。</li>
+                    <li>对平面设计感兴趣，注重基础的设计规范。</li>
+                    <li>
+                        非常熟练计算机硬件的组装和维护，包括硬件与软件的维护与问题排查及检修。
+                    </li>
+                    <li>
+                        对英语感兴趣，平时爱看美剧，听力水平不错，能阅读英文文档。
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 项目经历 -->
+            <section>
+                <h1 class="space-x-2 border-b pb-4">
+                    <i class="ri-git-pull-request-line"></i
+                    ><span class="font-medium">项目经历</span>
+                </h1>
+
+                <div class="space-y-5 pt-5">
+                    <header class="flex justify-between">
+                        <div class="flex items-center gap-6">
+                            <h1 class="text-3xl font-semibold text-blue-600">
+                                小兔鲜Web端
+                            </h1>
+                            <i>Vue3</i>
+                        </div>
+                        <span>2023.4-2023.6</span>
+                    </header>
+
+                    <div class="ml-8 space-y-5">
+                        <div>
+                            <h2 class="pb-4 font-bold">项目介绍</h2>
+                            <p>使用Vue3编写的商城Web端项目</p>
+                        </div>
+
+                        <div>
+                            <h2 class="pb-4 font-bold">技术栈</h2>
+                            <p>
+                                Vue3 + Vite + Vue-Router + Pinia + Axios +
+                                Element-Plus + Vue-Use
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="pb-4 font-bold">项目详情</h2>
+                            <ul class="list-disc space-y-3">
+                                <li>
+                                    使用axios发送请求，二次封装axios方法，添加了请求拦截和响应拦截，发送异步请求，配合后端API完成页面渲染。
+                                </li>
+                                <li>
+                                    使用Vue-Router，运用路由传参，配合接口完成路由跳转、创建订单、支付等功能。
+                                </li>
+                                <li>
+                                    通过通用逻辑函数封装、组件封装、图片懒加载、路由缓存问题处理，优化网站性能，提升代码复用性和可维护性。
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-5 pt-5">
+                    <header class="flex justify-between">
+                        <div class="flex items-center gap-6">
+                            <h1 class="text-3xl font-semibold text-blue-600">
+                                小兔鲜移动端
+                            </h1>
+                            <i>Uni-app</i>
+                        </div>
+                        <span>2023.6-2023.8</span>
+                    </header>
+
+                    <div class="ml-8 space-y-5">
+                        <div>
+                            <h2 class="pb-4 font-bold">项目介绍</h2>
+                            <p>使用Vue3编写的商城Web端项目</p>
+                        </div>
+
+                        <div>
+                            <h2 class="pb-4 font-bold">技术栈</h2>
+                            <p>
+                                Vue3 + Vite + Vue-Router + Pinia + Axios +
+                                Element-Plus + Vue-Use
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="pb-4 font-bold">项目详情</h2>
+                            <ul class="list-disc space-y-3">
+                                <li>
+                                    使用axios发送请求，二次封装axios方法，添加了请求拦截和响应拦截，发送异步请求，配合后端API完成页面渲染。
+                                </li>
+                                <li>
+                                    使用Vue-Router，运用路由传参，配合接口完成路由跳转、创建订单、支付等功能。
+                                </li>
+                                <li>
+                                    通过通用逻辑函数封装、组件封装、图片懒加载、路由缓存问题处理，优化网站性能，提升代码复用性和可维护性。
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-5 pt-5">
+                    <header class="flex justify-between">
+                        <div class="flex items-center gap-6">
+                            <h1 class="text-3xl font-semibold text-blue-600">
+                                <a
+                                    href="https://github.com/Loosand/tailwind-github"
+                                    >GitHub静态网站仿写</a
+                                >
+                            </h1>
+                            <i>Tailwind</i>
+                        </div>
+                        <span>2023.7-2023.8</span>
+                    </header>
+
+                    <div class="ml-8 space-y-5">
+                        <div>
+                            <h2 class="pb-4 font-bold">项目介绍</h2>
+                            <p>
+                                使用Tailwind
+                                CSS和Nuxt.js仿写GitHub静态网站，实现了类似的页面布局和交互效果。包括适配响应式，并且有良好的无障碍性。
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="pb-4 font-bold">技术栈</h2>
+                            <p>Nuxt.js + TailwindCSS + Mock.js</p>
+                        </div>
+
+                        <div>
+                            <h2 class="pb-4 font-bold">项目详情</h2>
+                            <ul class="list-disc space-y-3">
+                                <li>
+                                    该项目通过使用Tailwind
+                                    CSS和Nuxt.js，成功实现了仿写GitHub静态网站的效果。在项目中，我负责了整体架构和页面开发的工作。我使用了Tailwind
+                                    CSS来快速构建页面的样式和布局，并结合Nuxt.js来实现网站的路由管理和页面渲染。
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 工作经历 -->
+            <section class="pb-20">
+                <h1 class="space-x-2 border-b pb-4">
+                    <i class="ri-door-open-fill"></i
+                    ><span class="font-medium">工作经历</span>
+                </h1>
+
+                <div class="space-y-5 pt-5">
+                    <header class="flex justify-between">
+                        <div class="flex items-center gap-6">
+                            <a
+                                href="https://www.ecovacs.cn/about/brand-story"
+                                class="text-3xl font-semibold text-blue-600">
+                                科沃斯机器人科技有限公司
+                            </a>
+                            <i>扫地机器人Top1</i>
+                        </div>
+                        <span>2021.9-2022.3</span>
+                    </header>
+
+                    <div class="ml-8">
+                        <h2 class="pb-4 font-semibold">职位</h2>
+                        <p>直播运营 - 实习</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
