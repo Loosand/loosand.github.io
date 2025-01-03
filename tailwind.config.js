@@ -23,6 +23,9 @@ module.exports = {
       },
       fontFamily: {
         sans: ['var(--font-space-grotesk)', ...fontFamily.sans],
+        serif: ['ui-serif', 'Georgia'],
+        mono: ['ui-monospace', 'SFMono-Regular'],
+        default: ['Helvetica', 'Arial', 'sans-serif'],
       },
       colors: {
         primary: colors.pink,

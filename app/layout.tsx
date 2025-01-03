@@ -64,6 +64,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html
       lang={siteMetadata.language}
       className={`${departureMono.className} scroll-smooth font-medium`}
+      // className={`scroll-smooth font-medium`}
       suppressHydrationWarning
     >
       <link
